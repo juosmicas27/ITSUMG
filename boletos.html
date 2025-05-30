@@ -1,0 +1,110 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de Boletos - AeroLibres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef6fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #007acc;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #005f99;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #003366;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Compra de Boletos</h1>
+        <p>Reserva tu vuelo con AeroLibres</p>
+    </header>
+
+    <main>
+        <h2>Formulario de Reserva</h2>
+        <form onsubmit="alert('¡Boleto reservado con éxito!'); return false;">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="origen">Ciudad de origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
+            <label for="destino">Ciudad de destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="fecha">Fecha del vuelo:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="pasajeros">Cantidad de pasajeros:</label>
+            <select id="pasajeros" name="pasajeros">
+                <option value="1">1 pasajero</option>
+                <option value="2">2 pasajeros</option>
+                <option value="3">3 pasajeros</option>
+                <option value="4">4 pasajeros</option>
+            </select>
+
+            <button type="submit">Comprar boleto</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 AeroLibres. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
